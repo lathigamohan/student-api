@@ -1,18 +1,29 @@
-# Student API
+# **Student API**  
+A simple REST API to manage students using **FastAPI** and **SQLite**.
 
-## Tech Stack
-- Python 3.13
-- FastAPI
-- SQLite
-- Uvicorn
+---
 
-## How to Run
+## **Tech Stack**  
+- **Python:** 3.13  
+- **Framework:** FastAPI  
+- **Database:** SQLite  
+- **Server:** Uvicorn  
 
-1. Create virtual environment
-2. Install requirements:
-   pip install -r requirements.txt
-3. Run:
-   uvicorn main:app --reload
+---
+Open http://127.0.0.1:8000/docs
+ to try out the API.
+ 
+## **How to Run**  
+```bash
+git clone https://github.com/lathigamohan/student-api.git
+cd student-api
+python -m venv venv
 
-## API Documentation
-http://127.0.0.1:8000/docs
+# Activate virtual environment
+# Windows:
+.\venv\Scripts\Activate.ps1
+# Linux/Mac:
+source venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn main:app --reload
